@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: api
+  name: my-deployment
 spec:
   template:
     spec:
@@ -9,6 +9,6 @@ spec:
         environment: staging
 
       volumes:
-      - name: vault-staging-tls-certificate
+      - name: some-volume
         secret:
-          secretName: vault-staging-tls-certificate
+          secretName: some-secret
