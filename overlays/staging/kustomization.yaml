@@ -2,7 +2,7 @@ commonLabels:
   environment: staging
 
 bases:
-- ../../bases
+- ../../base
 - ../../cronjobs
 
 patchesStrategicMerge:
