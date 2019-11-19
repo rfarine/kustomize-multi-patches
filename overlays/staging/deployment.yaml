@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api
+spec:
+  template:
+    spec:
+      nodeSelector:
+        environment: staging
+
+      volumes:
+      - name: vault-staging-tls-certificate
+        secret:
+          secretName: vault-staging-tls-certificate

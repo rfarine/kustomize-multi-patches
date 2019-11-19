@@ -1,0 +1,5 @@
+bases:
+- test1
+- test2
+patchesStrategicMerge:
+- cronjob.yaml

@@ -1,0 +1,10 @@
+commonLabels:
+  environment: staging
+
+bases:
+- ../../bases
+- ../../cronjobs
+
+patchesStrategicMerge:
+- deployment.yaml
+- cronjob.yaml

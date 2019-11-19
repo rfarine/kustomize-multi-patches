@@ -1,0 +1,14 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: cron
+spec:
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          volumes:
+          - name: vault-staging-tls-certificate
+            secret:
+              secretName: vault-staging-tls-certificate
+

@@ -1,0 +1,3 @@
+nameSuffix: "-test-2"
+resources:
+- cronjob.yaml
