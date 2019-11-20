@@ -1,5 +1,10 @@
 bases:
 - test1
 - test2
-patchesStrategicMerge:
-- cronjob.yaml
+
+patches:
+- path: cronjob.yaml
+  target:
+    group: batch
+    version: v1beta1
+    kind: CronJob
